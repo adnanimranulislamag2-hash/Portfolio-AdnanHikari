@@ -9,11 +9,7 @@
     "performance": "npx lhci autorestart"
   },
   "devDependencies": {
-    "@playwright/test": "^1.37.0",
-    "eslint": "^8.45.0",
-    "htmlhint": "^0.15.2",
-    "lighthouse": "^10.5.0",
-    "lhci": "^0.11.3"
+    "@playwright/test": "^1.37.0"
   },
   "repository": {
     "type": "git",
