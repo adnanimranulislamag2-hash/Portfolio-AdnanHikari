@@ -1,5 +1,6 @@
 name: E2E Tests
-on: [push]
+on: [push, pull_request]
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -8,6 +9,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # This makes future runs faster
       - run: npm install
       - run: npx playwright install --with-deps
       - run: npm run test:e2e

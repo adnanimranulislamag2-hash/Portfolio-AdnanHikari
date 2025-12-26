@@ -1,11 +1,13 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('Check if Portfolio Loads', async ({ page }) => {
-  await page.goto('https://694e2633d57c3cbb131fb357--tourmaline-croquembouche-7a448b.netlify.app'); 
+  // Use your main Netlify URL here
+  await page.goto('https://tourmaline-croquembouche-7a448b.netlify.app'); 
 
+  // This checks if your name is in the website title
   await expect(page).toHaveTitle(/Adnan/);
 
-  // Check if your main heading is visible
+  // This checks if your main heading (h1) is visible
   const heading = page.locator('h1');
   await expect(heading).toBeVisible();
 });
