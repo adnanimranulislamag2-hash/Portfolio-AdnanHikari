@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-adnanhikari",
+  "version": "1.0.0",
+  "description": "My professional portfolio with CI builds",
+  "main": "script.js",
+  "scripts": {
+    "lint": "npx htmlhint index.html && npx eslint script.js",
+    "test:e2e": "npx playwright test",
+    "performance": "npx lhci autorestart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnanimranulislamag2-hash/Portfolio-AdnanHikari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/adnanimranulislamag2-hash/Portfolio-AdnanHikari/issues"
+  },
+  "homepage": "https://github.com/adnanimranulislamag2-hash/Portfolio-AdnanHikari#readme"
+}
